@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="features">Features</string>
+    <string name="see_all">See All</string>
+    <string name="categories">Categories</string>
+</resources>
