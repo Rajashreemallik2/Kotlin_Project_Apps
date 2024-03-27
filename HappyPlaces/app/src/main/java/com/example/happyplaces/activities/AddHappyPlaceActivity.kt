@@ -1,5 +1,6 @@
 package com.example.happyplaces.activities
 
+import android.app.Activity
 import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.content.ActivityNotFoundException
@@ -135,11 +136,13 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
                     val dbHandler = DatabaseHandler(this)
                     val addHappyPlace = dbHandler.addHappyPlace(happyPlaceModel)
                     if (addHappyPlace > 0) {
-                        Toast.makeText(
-                            this,
-                            "The happy place details are inserted successfully.",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        setResult(Activity.RESULT_OK)
+//                        Toast.makeText(
+//                            this,
+//                            "The happy place details are inserted successfully.",
+//                            Toast.LENGTH_SHORT
+//                        ).show()
+
                         finish();//finishing activity
 
                     }
