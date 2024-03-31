@@ -1,6 +1,8 @@
 package com.example.happyplaces.models
 
- data class HappyPlaceModel(
+import java.io.Serializable
+
+data class HappyPlaceModel(
      val id: Int,
      val title: String,
      val image: String,
@@ -10,4 +12,4 @@ package com.example.happyplaces.models
      val latitude: Double,
      val longitude: Double
 
- )
+ ): Serializable
